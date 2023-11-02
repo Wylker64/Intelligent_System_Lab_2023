@@ -14,7 +14,7 @@ mp_hands = mp.solutions.hands
 #参数：1、是否检测静态图片，2、手的数量，3、检测阈值，4、跟踪阈值
 hands_mode = mp_hands.Hands(max_num_hands=2)
  
-cap = cv2.VideoCapture(1,cv2.CAP_DSHOW)
+cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 while cap.isOpened():
     success, image = cap.read()
     #image=cv2.imread("input.png")
